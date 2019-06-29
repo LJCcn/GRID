@@ -23,7 +23,7 @@ mpc = loadcase('case39');
 %  xlswrite('stric_index.xls',index1_1','C1','B1');
 
 %归一化灵敏度指标
-data1 = xlsread('index1-3.xls')
+data1 = xlsread('index_sense.xlsx')
 data_min = min(data1)
 data_max = max(data1)
 for i = 1:length(data1)

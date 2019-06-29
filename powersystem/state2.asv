@@ -99,8 +99,7 @@ for j =1:29
     if gap_pd == 0
         sens(j)=0
     else
-        sens(j) = abs(gap_netpd./gap_pd);
-    end
+    sens(j) = abs(gap_netpd./gap_pd);
 end
 xlswrite("index_sense.xlsx",sens')
         
