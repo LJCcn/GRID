@@ -33,7 +33,7 @@ end
 for j = 1:3
     w(j) = (1-e(j))./sum(1-e);
 end
-xlswrite('stric_index.xls',w,'D1')
+% xlswrite('stric_index.xls',w,'D1')
 
 
 % %对熵权法进行改进，异常数据进行处理：
