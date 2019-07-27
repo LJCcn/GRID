@@ -19,9 +19,8 @@ clear; clc;
 define_constants;
 mpopt = mpoption('out.all', 0, 'verbose', 2);
 mpopt = mpoption(mpopt,'cpf.stop_at','FULL','cpf.step',0.2);
-mpopt = mpoption(mpopt,'cpf.plot.level',2);
-mpcb = loadcase('case39');
-mpct = mpcb;
-mpct.gen(:, [PG QG]) = mpcb.gen(:, [PG QG]) * 2.5;
-mpct.bus(:, [PD QD]) = mpcb.bus(:, [PD QD]) * 2.5;
-results = runcpf(mpcb, mpct, mpopt);
+mpopt = mpoption(mpopt,'cpt.plot.level',2);
+mpc
+mpc = loadcase('case39');
+
+result = runcpf(mpc);
